@@ -7,8 +7,8 @@ export default {
   },
   async created() {
     try {
-      console.log("Fetching from Flask API...");
-      const response = await fetch('http://127.0.0.1:5000/api/hello');
+      console.log("Fetching from Render API...");
+      const response = await fetch('https://air-conditioners-api.onrender.com/api/hello');
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
