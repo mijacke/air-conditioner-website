@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Allow frontend to access backend
+CORS(app, resources={r"/*": {"origins": "https://air-conditioners-website.vercel.app"}})
 
 # Add a default route for testing
 @app.route("/", methods=["GET"])
