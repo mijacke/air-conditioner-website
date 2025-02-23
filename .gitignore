@@ -1,0 +1,80 @@
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore Node.js dependencies (Frontend)
+frontend/node_modules/
+frontend/.vscode/
+frontend/.vercel/
+
+# Ignore Python dependencies (Backend)
+backend/venv/
+backend/__pycache__/
+
+# Ignore Node.js dependencies (Root)
+node_modules/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+.idea/
+*.log
+
+# Ignore build output (Frontend)
+frontend/dist/
+
+# Ignore TypeScript & Vite generated files
+frontend/tsconfig.tsbuildinfo
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+.idea/
+*.log
+
+# FRONTEND .gitignore
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.vercel
