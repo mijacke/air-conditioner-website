@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: process.env.NODE_ENV === "development" ? {
       '/api': {
-        target: 'http://127.0.0.1:5000',
+        target: 'http://127.0.0.1:10000',
         changeOrigin: true,
         secure: false,
       },
@@ -15,8 +15,8 @@ export default defineConfig({
   define: {
     __API_URL__: JSON.stringify(
       process.env.NODE_ENV === "production"
-        ? "https://air-conditioners-api.onrender.com"
-        : "http://127.0.0.1:5000"
+        ? "https://air-conditioner-website.onrender.com"  // opravená URL
+        : "http://127.0.0.1:10000"
     ),
   }
 })

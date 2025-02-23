@@ -1,13 +1,9 @@
-# app.py
 from flask import Flask, jsonify
 from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": [
-  "https://air-conditioners-website.vercel.app",
-  "http://localhost:3000"  # local origin for development
-]}})
+CORS(app, resources={r"/api/*": {"origins": "https://air-conditioners-website.vercel.app"}})
 
 @app.route("/", methods=["GET"])
 def home():
