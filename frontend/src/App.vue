@@ -7,11 +7,18 @@ export default {
   },
   async created() {
     try {
-      console.log("Fetching from Render API...");
-      const response = await fetch('https://air-conditioners-api.onrender.com/api/hello');
+      console.log("Fetching from API...");
+      const response = await fetch(`${__API_URL__}/api/hello`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
+
       const data = await response.json();
       this.message = data.message;
       console.log("Flask response:", data);
