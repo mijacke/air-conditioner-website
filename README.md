@@ -30,4 +30,3 @@ The backend provides API endpoints for fetching data:
 
 ## Contact
 For inquiries and support, please reach out through the contact form on the website.
-
