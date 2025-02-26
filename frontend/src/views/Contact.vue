@@ -26,8 +26,8 @@
           <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
           <p class="mb-4">For inquiries or service requests, contact us:</p>
           <p class="mb-2"><strong>Email:</strong> info@aircondpro.com</p>
-          <p class="mb-2"><strong>Phone:</strong> +1 (800) 123-4567</p>
-          <p class="mb-2"><strong>Address:</strong> 123 Main St, City, Country</p>
+          <p class="mb-2"><strong>Phone:</strong> +421 903 123-456</p>
+          <p class="mb-2"><strong>Address:</strong> Galanta, Hodská 1234</p>
         </div>
       </div>
     </div>

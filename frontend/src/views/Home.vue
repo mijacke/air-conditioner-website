@@ -85,18 +85,17 @@ export default defineComponent({
   name: 'Home',
   setup() {
     const products = ref<Product[]>([
-      { id: 1, name: "AC Model A", description: "Efficient and quiet air conditioner.", image: "https://via.placeholder.com/400x300" },
-      { id: 2, name: "AC Model B", description: "High performance for larger spaces.", image: "https://via.placeholder.com/400x300" },
-      { id: 3, name: "AC Model C", description: "Economical and stylish design.", image: "https://via.placeholder.com/400x300" },
-      { id: 4, name: "AC Model D", description: "Energy-saving with smart features.", image: "https://via.placeholder.com/400x300" },
-      { id: 5, name: "AC Model E", description: "Compact and powerful air conditioner.", image: "https://via.placeholder.com/400x300" },
-      { id: 6, name: "AC Model F", description: "Modern design with advanced cooling.", image: "https://via.placeholder.com/400x300" }
-    ])
-
+      { id: 1, name: "AC Model A", description: "Efficient and quiet air conditioner.", image: "placeholder-400x300.png" },
+      { id: 2, name: "AC Model B", description: "High performance for larger spaces.", image: "placeholder-400x300.png" },
+      { id: 3, name: "AC Model C", description: "Economical and stylish design.", image: "placeholder-400x300.png" },
+      { id: 4, name: "AC Model D", description: "Energy-saving with smart features.", image: "placeholder-400x300.png" },
+      { id: 5, name: "AC Model E", description: "Compact and powerful air conditioner.", image: "placeholder-400x300.png" },
+      { id: 6, name: "AC Model F", description: "Modern design with advanced cooling.", image: "placeholder-400x300.png" }
+    ])    
     const team = ref<TeamMember[]>([
-      { id: 1, name: "Alice Johnson", role: "CEO", image: "https://via.placeholder.com/150" },
-      { id: 2, name: "Bob Smith", role: "CTO", image: "https://via.placeholder.com/150" },
-      { id: 3, name: "Carol Williams", role: "Lead Engineer", image: "https://via.placeholder.com/150" }
+      { id: 1, name: "Marcel Vasko", role: "CEO", image: "placeholder_image.jpg" },
+      { id: 2, name: "Mario Lassu", role: "CTO/Lead Engineer", image: "placeholder_image.jpg" },
+      { id: 3, name: "Placeholder Kijac", role: "", image: "placeholder_image.jpg" }
     ])
 
     return { products, team }

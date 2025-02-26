@@ -6,7 +6,7 @@
         <div class="mt-4">
           <a href="mailto:info@aircondpro.com" class="hover:text-white mx-2">info@aircondpro.com</a>
           <span class="mx-2">|</span>
-          <a href="tel:+18001234567" class="hover:text-white mx-2">+1 (800) 123-4567</a>
+          <a href="tel:+421903123456" class="hover:text-white mx-2">+421 903 123-456</a>
         </div>
       </div>
     </footer>
