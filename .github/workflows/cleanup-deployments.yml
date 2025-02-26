@@ -1,0 +1,31 @@
+name: Cleanup Deployments
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      deployments: write
+    steps:
+      - name: Delete old deployments
+        uses: peter-evans/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: production
+          onlyRemoveDeployments: true
+      - name: Delete old deployments for air-conditioner-web
+        uses: peter-evans/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: air-conditioner-web
+          onlyRemoveDeployments: true
+      - name: Delete old deployments for air-conditioners-web
+        uses: peter-evans/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: air-conditioners-web
+          onlyRemoveDeployments: true
